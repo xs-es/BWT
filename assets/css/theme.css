@@ -1,0 +1,202 @@
+/* Theme CSS - Theme-specific variables and styles */
+
+:root {
+  /* 
+  * Theme Variables
+  * These variables can be modified to create different themes
+  * without changing the core structure of the website
+  */
+  
+  /* Theme Colors */
+  --theme-primary: #4a6cf7;            /* Main brand color */
+  --theme-primary-light: #6c8af8;      /* Lighter version of primary */
+  --theme-primary-dark: #3a5ce5;       /* Darker version of primary */
+  
+  --theme-secondary: #f97316;          /* Secondary accent color */
+  --theme-secondary-light: #fb923c;    /* Lighter version of secondary */
+  --theme-secondary-dark: #ea580c;     /* Darker version of secondary */
+  
+  /* Text Colors */
+  --theme-text: #1e293b;               /* Main text color */
+  --theme-text-light: #64748b;         /* Secondary text color */
+  --theme-text-lighter: #94a3b8;       /* Tertiary text color */
+  
+  /* Background Colors */
+  --theme-bg: #ffffff;                 /* Main background color */
+  --theme-bg-light: #f8fafc;           /* Secondary background color */
+  --theme-bg-dark: #f1f5f9;            /* Tertiary background color */
+  
+  /* Border Colors */
+  --theme-border: #e2e8f0;             /* Main border color */
+  --theme-border-dark: #cbd5e1;        /* Darker border color */
+  
+  /* Typography */
+  --theme-font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --theme-font-secondary: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  
+  /* Component-specific Theming */
+  --theme-header-bg: var(--theme-bg);
+  --theme-footer-bg: var(--theme-text);
+  --theme-hero-bg: var(--theme-bg-light);
+  --theme-card-bg: var(--theme-bg);
+  --theme-button-radius: var(--border-radius);
+  --theme-card-radius: var(--border-radius-lg);
+  
+  /* Apply theme variables to the base variables */
+  --color-primary: var(--theme-primary);
+  --color-primary-light: var(--theme-primary-light);
+  --color-primary-dark: var(--theme-primary-dark);
+  
+  --color-secondary: var(--theme-secondary);
+  --color-secondary-light: var(--theme-secondary-light);
+  --color-secondary-dark: var(--theme-secondary-dark);
+  
+  --color-text: var(--theme-text);
+  --color-text-light: var(--theme-text-light);
+  --color-text-lighter: var(--theme-text-lighter);
+  
+  --color-background: var(--theme-bg);
+  --color-background-light: var(--theme-bg-light);
+  --color-background-dark: var(--theme-bg-dark);
+  
+  --color-border: var(--theme-border);
+  --color-border-dark: var(--theme-border-dark);
+  
+  --font-family-primary: var(--theme-font-primary);
+  --font-family-secondary: var(--theme-font-secondary);
+}
+
+/* 
+* Theme-specific Component Styling
+* These styles can be modified to change the look and feel of components
+* without changing their structure
+*/
+
+/* Header Theming */
+.site-header {
+  background-color: var(--theme-header-bg);
+}
+
+/* Hero Section Theming */
+.hero-section {
+  background-color: var(--theme-hero-bg);
+  position: relative;
+}
+
+/* Optional: Hero section with gradient background */
+.hero-section.gradient {
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary-dark));
+  color: #fff;
+}
+
+.hero-section.gradient .hero-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Card Theming */
+.card,
+.feature-card,
+.service-card,
+.testimonial-card {
+  border-radius: var(--theme-card-radius);
+  background-color: var(--theme-card-bg);
+}
+
+/* Button Theming */
+.btn {
+  border-radius: var(--theme-button-radius);
+}
+
+/* Footer Theming */
+.site-footer {
+  background-color: var(--theme-footer-bg);
+}
+
+/* 
+* Theme Variants
+* Uncomment one of these sections to apply a different theme
+*/
+
+/* 
+* DARK THEME
+* Uncomment this section to apply a dark theme
+*/
+/*
+:root {
+  --theme-primary: #6d8dff;
+  --theme-primary-light: #8ba4ff;
+  --theme-primary-dark: #5273e0;
+  
+  --theme-secondary: #ff9f56;
+  --theme-secondary-light: #ffb77d;
+  --theme-secondary-dark: #f78639;
+  
+  --theme-text: #e2e8f0;
+  --theme-text-light: #cbd5e1;
+  --theme-text-lighter: #94a3b8;
+  
+  --theme-bg: #1e293b;
+  --theme-bg-light: #334155;
+  --theme-bg-dark: #0f172a;
+  
+  --theme-border: #334155;
+  --theme-border-dark: #475569;
+  
+  --theme-header-bg: var(--theme-bg);
+  --theme-footer-bg: #0f172a;
+}
+*/
+
+/* 
+* GREEN THEME
+* Uncomment this section to apply a green theme
+*/
+/*
+:root {
+  --theme-primary: #10b981;
+  --theme-primary-light: #34d399;
+  --theme-primary-dark: #059669;
+  
+  --theme-secondary: #f97316;
+  --theme-secondary-light: #fb923c;
+  --theme-secondary-dark: #ea580c;
+  
+  --theme-text: #1e293b;
+  --theme-text-light: #64748b;
+  --theme-text-lighter: #94a3b8;
+  
+  --theme-bg: #ffffff;
+  --theme-bg-light: #f8fafc;
+  --theme-bg-dark: #f1f5f9;
+  
+  --theme-border: #e2e8f0;
+  --theme-border-dark: #cbd5e1;
+}
+*/
+
+/* 
+* PURPLE THEME
+* Uncomment this section to apply a purple theme
+*/
+/*
+:root {
+  --theme-primary: #8b5cf6;
+  --theme-primary-light: #a78bfa;
+  --theme-primary-dark: #7c3aed;
+  
+  --theme-secondary: #ec4899;
+  --theme-secondary-light: #f472b6;
+  --theme-secondary-dark: #db2777;
+  
+  --theme-text: #1e293b;
+  --theme-text-light: #64748b;
+  --theme-text-lighter: #94a3b8;
+  
+  --theme-bg: #ffffff;
+  --theme-bg-light: #f8fafc;
+  --theme-bg-dark: #f1f5f9;
+  
+  --theme-border: #e2e8f0;
+  --theme-border-dark: #cbd5e1;
+}
+*/
