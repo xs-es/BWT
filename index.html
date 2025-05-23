@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional base website template">
+    <title>Professional Base Website</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="Site Logo" class="logo-img">
+                        <span class="logo-text">Company Name</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                        <span class="hamburger"></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="portfolio.html" class="nav-link">Portfolio <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="portfolio-category-1.html">Category 1</a></li>
+                                <li><a href="portfolio-category-2.html">Category 2</a></li>
+                                <li><a href="portfolio-category-3.html">Category 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Your Professional Website</h1>
+                <p class="hero-subtitle">A flexible base template for rapid website development</p>
+                <div class="hero-buttons">
+                    <a href="#features" class="btn btn-primary">Explore Features</a>
+                    <a href="contact.html" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Features</h2>
+                <p class="section-description">Discover what makes our base template stand out</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Responsive Design</h3>
+                    <p class="feature-description">Looks great on all devices, from mobile phones to desktop monitors.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="feature-title">Customizable Themes</h3>
+                    <p class="feature-description">Easily apply different themes to match your brand identity.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Performance Optimized</h3>
+                    <p class="feature-description">Built with performance in mind for fast loading times.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="feature-title">Clean Code</h3>
+                    <p class="feature-description">Well-structured code that's easy to understand and modify.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="feature-title">SEO Friendly</h3>
+                    <p class="feature-description">Optimized for search engines to help improve your visibility.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <h3 class="feature-title">Accessibility</h3>
+                    <p class="feature-description">Built with accessibility in mind to reach all users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section-padding bg-light">
+        <div class="container">
+            <div class="two-column-grid">
+                <div class="column">
+                    <img src="assets/images/about-image.jpg" alt="About Us" class="about-image">
+                </div>
+                <div class="column">
+                    <div class="section-header text-left">
+                        <h2 class="section-title">About Us</h2>
+                        <p class="section-description">Learn more about our company and our mission</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">Explore the range of services we offer</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">Custom websites built with the latest technologies to meet your specific needs.</p>
+                    <a href="services.html#web-development" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">User-centered design that enhances user experience and engagement.</p>
+                    <a href="services.html#ui-ux-design" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-description">Strategies to increase your online presence and reach your target audience.</p>
+                    <a href="services.html#digital-marketing" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">Hear from our satisfied customers</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/testimonial-1.jpg" alt="John Doe" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">John Doe</h4>
+                            <p class="testimonial-position">CEO, Company Name</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/testimonial-2.jpg" alt="Jane Smith" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Jane Smith</h4>
+                            <p class="testimonial-position">Marketing Director, Company Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding bg-primary">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Get Started?</h2>
+                <p class="cta-description">Contact us today to discuss your project requirements.</p>
+                <a href="contact.html" class="btn btn-light">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.svg" alt="Site Logo" class="logo-img">
+                        <span class="logo-text">Company Name</span>
+                    </div>
+                    <p class="footer-description">A professional base website template for rapid development.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="widget-title">Quick Links</h3>
+                    <ul class="widget-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="widget-title">Services</h3>
+                    <ul class="widget-links">
+                        <li><a href="services.html#web-development">Web Development</a></li>
+                        <li><a href="services.html#ui-ux-design">UI/UX Design</a></li>
+                        <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+                        <li><a href="services.html#seo">SEO Optimization</a></li>
+                        <li><a href="services.html#content-creation">Content Creation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h3 class="widget-title">Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Street Name, City, Country</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year">2025</span> Company Name. All Rights Reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
